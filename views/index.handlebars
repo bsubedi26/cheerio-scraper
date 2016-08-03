@@ -1,0 +1,36 @@
+<div class="container">
+
+		{{#each results}}
+		<div class="card">
+			<a href="{{this.link}}" target="_blank"><h4 class="card-title text-xs-center">{{this.title}}</h4></a>
+			<div class="row">
+			<div class="col-md-6">
+			<img class="card-img-top img-rounded" src="{{this.imgURL}}" alt="Card image">
+			</div>
+			
+			<div class="col-md-6">
+			<p class="card-text">{{this.paragraphs}}</p>
+			</div>
+
+			</div>
+			<div class="card-block">
+			<div class="text-xs-center button" data-id="{{this._id}}" >
+	    	{{!-- <a href="#" class="btn btn-primary btn-lg center-block">Add Comment!</a> --}}
+		    	<div class="form-group row"> <label for="comment" class="col-form-label">
+		    	</label><div><input class="form-control text-xs-center" type="text"id="comment"></div></div>
+
+			<ul class="list-group list-group-flush {{this._id}}">
+				{{!-- <li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Vestibulum at eros</li> --}}
+			</ul>
+			</div>
+			</div>
+    	</div>
+
+		{{/each}}
+	</div>
+
+<script type="text/javascript" src="/javascript/index.js"></script>
+    
+</div>
