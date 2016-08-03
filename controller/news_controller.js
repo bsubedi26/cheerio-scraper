@@ -5,7 +5,7 @@ var mongojs = require('mongojs');
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 // MongoDB configuriation
-var databaseUrl = "architecture-scrape";
+var databaseUrl = "mongodb://heroku_v95f79xg:15i2m30hcoadhps27cqh1060tg@ds139725.mlab.com:39725/heroku_v95f79xg";
 var collections = ["data"];
 
 // use mongojs to hook the database to the db variable 
